@@ -1,0 +1,14 @@
+<ion-view view-title="Home">
+    <ion-content class="padding">
+        <div class="list text-center padding">
+            <img class="logo" src="img/logo.jpg">
+            <h2><span class="bold">Welcome <br>{{displayName}} !</span></h2>
+            <h2>You are a Grade {{yearLevel}} student.</h2>
+            <h3 class="line-height-160">We're so glad to have you with us! <b>{{email}}</b>.</h3>
+            <h3 class="line-height-160">You are now logged in</b>.</h3>
+        </div>
+    </ion-content>
+    <div class="bar bar-footer bar-positive" ng-click="logout()">
+        <h1 class="title">Logout</h1>
+    </div>
+</ion-view>

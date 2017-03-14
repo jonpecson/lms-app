@@ -1,0 +1,24 @@
+<ion-view view-title="Quizzes">
+    <ion-content class="padding">
+
+
+        <div class="list card" ng-repeat="quiz in quizzes">
+
+            <div class="item item-avatar">
+                <img src="img/sc.png">
+                <h2>{{quiz.topic}}</h2>
+                <p>{{quiz.description}}</p>
+            </div>
+
+            <!--<div class="item item-image">
+                <img src="{{quiz.thumbnail}}">
+            </div>-->
+            <a class="item item-icon-left assertive" ui-sref="app.quiz-detail({quizId:quiz.$id})">
+                <i class="icon ion-arrow-right-c"></i> Start the quiz
+            </a>
+
+        </div>
+
+
+    </ion-content>
+</ion-view>

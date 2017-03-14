@@ -1,0 +1,23 @@
+<ion-view view-title="Lessons">
+    <ion-content class="padding">
+
+
+        <div class="list card" ng-repeat="lesson in lessons | filter: 'yearLevel: 7'">
+
+            <div class="item item-avatar">
+                <img src="img/sc.png">
+                <h2>{{lesson.title}}</h2>
+                <p>{{lesson.description}}</p>
+                <p>{{lesson.yearLevel}}</p>
+            </div>
+
+            <div class="item item-image">
+                <img src="{{lesson.thumbnail}}">
+            </div>
+            <a class="item item-icon-left assertive" ui-sref="app.lesson-detail({lessonId:lesson.$id})">
+                <i class="icon ion-arrow-right-c"></i> Start the lesson
+            </a>
+
+        </div>
+    </ion-content>
+</ion-view>

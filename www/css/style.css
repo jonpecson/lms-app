@@ -1,0 +1,48 @@
+.logo {
+  width: 100%;
+  height: auto;
+  margin-top: 25px;
+}
+.item-input {
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+.button {
+  border-radius: 5px;
+}
+.button-no-margin-top {
+  margin-top: 0px !important;
+}
+.spinner svg {
+  width: 56px;
+  height: 56px;
+  stroke: #fff;
+  fill: #fff;
+}
+.message-popup {
+  width: 225px;
+  height: auto;
+  border-radius: 50px !important;
+}
+.message-popup p {
+  line-height: 160%;
+  font-size: 110%;
+}
+.loading {
+  border-radius: 10px !important;
+}
+.profilePic {
+  width: 150px;
+  height: auto;
+  border-radius: 150px;
+  margin-top:75px;
+}
+.bold {
+  font-weight: bolder;
+}
+.line-height-160 {
+  line-height: 160%;
+}
+h4 a {
+  text-decoration: none;
+}

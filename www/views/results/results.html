@@ -1,0 +1,22 @@
+$scope.localResults
+<ion-view view-title="Results">
+    <ion-content class="padding">
+
+
+        <div class="list">
+
+            <a class="item" ng-repeat="result in localResults">
+                <!--<i class="icon ion-person-stalker"></i>-->
+                {{result.topic}}
+                <p>{{result.status}}</p>
+                <!--<p>{{result.date | date: 'medium' }}</p>-->
+                <p ng-bind="result.date | date:'medium'"></p>
+                <span class="badge" ng-class="result.status == 'Passed' ? 'badge-balanced' : 'badge-assertive'">{{result.score}}</span>
+            </a>
+
+
+        </div>
+
+
+    </ion-content>
+</ion-view>
