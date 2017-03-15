@@ -2,7 +2,7 @@
     <ion-content class="padding">
 
 
-        <div class="list card" ng-repeat="quiz in quizzes">
+        <div class="list card" ng-repeat="quiz in quizzes | filter: yearLevel">
 
             <div class="item item-avatar">
                 <img src="img/sc.png">

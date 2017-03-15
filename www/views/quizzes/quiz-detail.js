@@ -79,12 +79,5 @@ angular.module('App').controller('quizDetailController', function($scope, $state
 
         $scope.results.$add(result);
         // $state.go('app.quizzes');
-
-
     }
-
-
-
-
-
 });
