@@ -1,7 +1,7 @@
 <ion-view view-title="Lessons">
     <ion-content class="padding">
 
-        <div class="list card" ng-repeat="lesson in lessons | filter: yearLevel">
+        <div class="list card" ng-repeat="lesson in lessons | filter:{'yearLevel' : yearLevel}">
 
             <div class="item item-avatar">
                 <img src="img/sc.png">
